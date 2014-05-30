@@ -1,9 +1,78 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Hellow World</title>
-</head>
+	<title>Ритуальные услуги</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></head>
 <body>
-	<p>я хост с github pages</p>
+	<img src="Xaron.jpg" align="left" class="img">
+	<img src="atropus.jpeg" align="right" class="img">
+	<div class="main">
+		<h1 class="h11">Ритуальные услуги Ростова-на-Дону</h1>
+		<ul class="menu" type="none">
+			<li>
+				<a href="grobs.html">Каталог</a>
+			</li>
+			<li>
+				<a href="info.html">Информация</a>
+			</li>
+		</ul>
+		<div class="in">
+			<div class="vis">
+				<h1>Атропос</h1>
+				<p>Адрес: Ростов-на-Дону, ул. Вити Черевичкина, 64</p>
+				<p>Телефон: 8 (863) 251-76-45 (телефон магазина),</p>
+				<p class="p7">8 (863) 226 47 46 (круглосуточно),</p>
+				<p class="p7">8 (928) 768 02 34 (телефон агента)</p>
+				<img src="images/map.png" class="map">
+				<img src="images/znak.png" class="znak">
+				<div class="info">
+					<h2 align="center">Наши услуги</h2>
+					<p class="p5">Оформление документов и организация похорон</p>
+					<p class="p6">
+						(бесплатно - консультации по телефону и выезд квалифицированного агента на дом)
+					</p>
+					<p class="p5">Похоронные принадлежности</p>
+					<p class="p6">(гробы, венки, кресты, ритуальные аксессуары)</p>
+					<p class="p5">Подготовка умершего к погребению</p>
+					<p class="p6">
+						(санитарные услуги, бальзамирование, а также обряды омовения, одеяния, отпевания, прощальный зал)
+					</p>
+					<p class="p5">Ритуальный транспорт</p>
+					<p class="p6">
+						(все виды катафалков, транспортировка умершего по городу, области, России, СНГ, бригады похоронной обслуги)
+					</p>
+					<h2 align="center">Для оформления похорон</h2>
+					<p align="center">необходимы следующие документы:</p>
+					<ul class="ul2">
+						<li class="l5">1. Паспорт заявителя</li>
+						<li class="l6">2. Паспорт умершего</li>
+						<li class="l7">3. Справка о смерти</li>
+					</ul>
+				</div>
+			</div>
+			<div class="window-out">
+				<div class="window">
+					<h1 class="h1">Атропос</h1>
+					<br />
+					<img class="zdanie" src="images/zdanie.png">
+					<img class="zdanie1" src="images/right-side.png"></div>
+			</div>
+		</div>
+	</div>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script>
+			$(document).ready(function(){
+			 		$(".znak").click(function(){
+						$(".window-out").fadeIn(500);
+					})
+			 		$(".window-out").click(function(){
+						$(".window-out").fadeOut(500);
+					}).children().click(function(e){
+						return false;
+					})
+
+			}) 
+
+			</script>
 </body>
 </html>

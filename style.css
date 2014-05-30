@@ -486,9 +486,8 @@ h2{
 .menu2 li{
 	display: block;
 }
-.ul2{position: absolute;
-	left: 200px;
-	width: 500px;}
+.menu2 .li1 .ul2{position: absolute;
+	left: 200px;}
 
 .menu2 .li1{
 top: 100px;
